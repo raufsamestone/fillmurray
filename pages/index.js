@@ -5,30 +5,28 @@ import Warning from "../pages/components/warning";
 
 export default function Home() {
   const Title = "Fill Murray ";
-  const subTitle =
-    "Unofficial re-Designed Version of";
-    const fillmurray =
-    "www.fillmurray.com";
+  const subTitle = "Unofficial re-designed version of";
   const [width, setWidth] = useState(300);
   const [heigth, setHeigth] = useState(400);
   const cardImage = "/card.jpg";
-  const domain = "";
-  const fillmurrayURL = 'https://www.fillmurray.com'
+  const domain = "https://fillmurray.vercel.app/";
+  const fillmurrayURL = "https://www.fillmurray.com";
+  const fillMurray = "www.fillmurray.com";
   const uri = `${fillmurrayURL}/${width}/${heigth}`;
-  const generateRandomNumber = () => {
+  const shuffle = () => {
     var randomNumber = Math.floor(Math.random() * 400) + 1;
     setWidth(randomNumber);
   };
   return (
     <>
       <Head>
-        <title>{Title}</title>
+        <title>{`${Title} | ${subTitle} ${fillMurray}`}</title>
         <link rel="icon" href="/favicon.ico" />
         <meta property="og:url" content={domain} />
         <meta property="og:image" content={cardImage} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:creator" content="@raufsamestone" />
-        <meta name="twitter:title" content={Title} />
+        <meta name="twitter:title" content={Title + subTitle + fillMurray} />
         <meta name="twitter:description" content={subTitle} />
         <meta name="twitter:image" content={cardImage} />
       </Head>
@@ -36,7 +34,10 @@ export default function Home() {
         {Title}
       </h1>
       <h2 className="font-sans font-black text-center text-xl title">
-        {subTitle}
+        {subTitle}{" "}
+        <span className="font-sans font-black text-center text-xl text-white">
+          {fillMurray}
+        </span>
       </h2>
       <div className={styles.container}>
         <main className={styles.main}>
@@ -64,9 +65,9 @@ export default function Home() {
             </span>
             <br />
             <button
-              title="Generate Random Number"
+              title="Generate Random Size"
               className="bg-gray-300 mt-5 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center w-auto"
-              onClick={generateRandomNumber}
+              onClick={shuffle}
             >
               Random 🎲
             </button>
