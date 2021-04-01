@@ -21,8 +21,7 @@ a {
   box-sizing: border-box;
 }
 
-h1,
-h2 {
+.gradient {
   margin: 0;
   line-height: 1.15;
   background: #4F68CF;
@@ -31,5 +30,7 @@ h2 {
   background: linear-gradient(to right, #4F68CF 0%, #CF1986 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 4rem;
+}
+.link {
+  color: #e2e8f0!important;
 }

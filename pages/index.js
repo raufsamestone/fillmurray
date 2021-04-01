@@ -30,15 +30,20 @@ export default function Home() {
         <meta name="twitter:description" content={subTitle} />
         <meta name="twitter:image" content={cardImage} />
       </Head>
-      <h1 className="font-sans font-black text-center text-6xl title">
+      <h1 className="font-sans font-black text-center text-6xl gradient">
         {Title}
       </h1>
-      <h2 className="font-sans font-black text-center text-xl title">
+      <h2 className="font-sans font-black text-center text-4xl gradient">
         {subTitle}{" "}
-        <span className="font-sans font-black text-center text-xl text-white">
-          {fillMurray}
-        </span>
       </h2>
+      <a
+        href={fillmurrayURL}
+        title={fillMurray}
+        className="font-sans font-bold text-center text-xl link block"
+      >
+        {fillMurray}
+      </a>
+
       <div className={styles.container}>
         <main className={styles.main}>
           <div className="mt-4 inline-block relative w-64 text-center">
@@ -94,11 +99,8 @@ export default function Home() {
           </a>
         </div>
       </div>
-      <p className="text-center font-bold text-gray-500 text-xs mt-12 mb-12">
-        &copy; <a href="https://raufsamestone.com"> 👋 raufsamestone.com</a>
-        <br />
-        <span className="font-normal mt-7">Originally,</span>{" "}
-        <a href="https://www.fillmurray.com/"> fillmurray.com</a>
+      <p className="text-center font-bold text-gray-400 text-xs mt-12 mb-12">
+        <a href="https://raufsamestone.com"> 👋 raufsamestone.com</a>
       </p>
     </>
   );
