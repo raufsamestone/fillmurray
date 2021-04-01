@@ -50,6 +50,12 @@
 .title {
   margin: 0;
   line-height: 1.15;
+  background: #4F68CF;
+background: -webkit-linear-gradient(to right, #4F68CF 0%, #CF1986 100%);
+background: -moz-linear-gradient(to right, #4F68CF 0%, #CF1986 100%);
+background: linear-gradient(to right, #4F68CF 0%, #CF1986 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
   font-size: 4rem;
 }
 
@@ -85,10 +91,13 @@
   display: grid;
   margin: auto;
   text-align: center;
+  margin-top: 4rem;
 }
 .gridItem img {
   margin: auto;
+  margin-bottom: 2rem;
   text-align: center;
+  border-radius: 0.3rem;
 }
 
 .card {

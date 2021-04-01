@@ -5,6 +5,7 @@
 
 html,
 body {
+  background-color: #060606;
   padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
@@ -18,4 +19,17 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+h1,
+h2 {
+  margin: 0;
+  line-height: 1.15;
+  background: #4F68CF;
+  background: -webkit-linear-gradient(to right, #4F68CF 0%, #CF1986 100%);
+  background: -moz-linear-gradient(to right, #4F68CF 0%, #CF1986 100%);
+  background: linear-gradient(to right, #4F68CF 0%, #CF1986 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 4rem;
 }

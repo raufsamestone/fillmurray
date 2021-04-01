@@ -1,6 +1,6 @@
 {
-  "name": "react-qr-generator",
-  "description": "Basic React QR Generator",
+  "name": "fill-murray-redesigned",
+  "description": "Fill Murray re-Designed",
   "version": "0.1.0",
   "private": true,
   "author": {
@@ -16,7 +16,7 @@
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "autoprefixer": "^9.8.6",
-    "next": "9.5.2",
+    "next": "^9.5.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "tailwindcss": "^1.7.3"
